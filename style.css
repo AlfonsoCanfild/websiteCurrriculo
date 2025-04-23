@@ -1,0 +1,259 @@
+/* Estilo CSS para o currículo e as variáveis de cores */
+:root {
+    --primaria-color: #ff00cc;
+    --primaria-color-2: #ff00ccaa;
+    --secundaria-color: #3333ff;
+    --background-color: #0d0d0d;
+    --cor-de-texto: #fff;
+    --cor-de-texto-secundaria: #999;
+    --cor-hover: #ffcc00;
+}
+
+/* Estilo para o o placeholder do formulário*/
+::placeholder {
+    color: var(--cor-de-texto-secundaria);
+    opacity: 0.4; /* Opacidade para o placeholder */
+    font-style: italic;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    margin: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var (--cor-de-texto);
+  }
+  
+
+  /* Topo com o nome e a minha profissão*/
+  .top-header {
+    text-align: center;
+    padding: 20px 0 10px;
+    background-color: var(--background-color);
+  }
+  
+  .top-header h1 {
+    margin: 0;
+    padding: 10px 0 5px;
+    font-size: 38px;
+    color: var(--cor-de-texto);
+  }
+  
+  .profissao {
+    color: var(--cor-de-texto-secundaria);
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+
+
+  /* Título da página com transição*/
+  .titulo-pagina {
+    text-align: center;
+    padding: 30px 0 10px;
+    background-color: var(--background-color);
+    animation: surgirSuave 1s ease-out forwards;
+  }
+  
+  .titulo-pagina h2 {
+    font-size: 32px;
+    color: var(--cor-de-texto-secundaria);
+    margin: 0;
+  }
+  
+
+  /* Menu de navegação com as quatro opções / foi difícil estilizar 😒*/
+  .nav {
+    background: linear-gradient(90deg, var(--primaria-color), var(--secundaria-color));
+    padding: 15px 0;
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav ul li {
+    margin: 0 20px;
+  }
+  
+  .nav ul li a {
+    color: var(--cor-de-texto);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.8s ease;
+  }
+  
+  .nav ul li a:hover {
+    color: var(--cor-hover);
+    text-shadow: 0 0 9px var(--cor-hover);
+  }
+
+  
+  /* Página principal com imagem à esquerda */
+  .principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 40px;
+    background: var(--background-color);
+    gap: 30px;
+  }
+  
+  .imagem-principal {
+    flex: 0 0 25%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .foto-perfil {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--primaria-color);
+    box-shadow: 0 0 15px var(--primaria-color-2);
+  }
+  
+  .conteudo-principal {
+    flex: 1;
+    font-size: 23px;
+    color: var(--cor-de-texto);
+    line-height: 1.5;
+    max-width: 800px;
+  }
+
+  /* Estilos e formatação do formulário */
+  .form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .form-contato label {
+    font-weight: bold;
+    color: var(--cor-de-texto);
+  }
+  
+  .form-contato input,
+  .form-contato textarea {
+    padding: 10px;
+    border: 2px solid var(--primaria-color);
+    border-radius: 8px;
+    background-color: var(--background-color);
+    color: var(--cor-de-texto);
+    font-size: 14px;
+  }
+  
+  .form-contato input:focus,
+  .form-contato textarea:focus {
+    outline: none;
+    border-color: var(--cor-hover);
+    box-shadow: 0 0 8px var(--cor-hover);
+  }
+  
+  .form-contato button {
+    padding: 11px;
+    font-size: 18px;
+    background: linear-gradient(90deg, var(--primaria-color), var(--secundaria-color));
+    color: var(--cor-de-texto);
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: background 0.8s ease;
+  }
+  
+  .form-contato button:hover {
+    background: var(--cor-hover);
+    color: black;
+  }
+
+  /* Estilos e alinhamento do Display-flex dos projetos... */
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .flex-container h3 {
+    font-size: 26px;
+    color: var(--cor-de-texto-secundaria);
+    margin-bottom: 2px;
+    text-transform: uppercase;
+    border-bottom: 4px solid var(--cor-de-texto-secundaria);
+    padding-bottom: 5px;
+  }
+  
+  .projetos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 65px;
+    justify-content: center;
+  }
+  
+  .projeto {
+    width: 320px;
+    background-color: var(--background-color);
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px var(--primaria-color-2);
+    transition: transform 0.3s ease;
+  }
+  
+  .projeto:hover {
+    transform: scale(1.10);
+    box-shadow: 0 0 20px var(--primaria-color-2);
+  }
+  
+  .projeto img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    border: 3px solid var(--secundaria-color);
+  }
+  
+  .links-projeto {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .links-projeto a {
+    text-align: center;
+    background: linear-gradient(90deg, var(--primaria-color), var(--secundaria-color));
+    color: var(--cor-de-texto);
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 6px;
+    transition: background-color 0.4s;
+    font-weight: bold;
+  }
+  
+  .links-projeto a:hover {
+    background: var(--cor-hover);
+    color: var(--background-color);
+  }
+
+  /* Estilo para o título da página, com transição, vindo de baixo pra cima, feito com ajuda da documentação on-line*/
+  @keyframes surgirSuave {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+    
