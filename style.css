@@ -290,8 +290,7 @@ body {
     }
 
     #formacao-educacional {
-        flex-direction: column;
-        justify-content: left;
+        text-align: left;
     }
   }
 
