@@ -275,9 +275,9 @@ body {
     }
 
       /* A minha foto para telas menores*/
-      .principal {
-        flex-direction: column;
-        align-items: center;
+    .principal {
+      flex-direction: column;
+      align-items: center;
     }
   
     .imagem-principal {
