@@ -288,6 +288,11 @@ body {
     .conteudo-principal {
         text-align: center;
     }
+
+    #formacao-educacional {
+        flex-direction: column;
+        justify-content: center;
+    }
   }
 
 
