@@ -175,7 +175,7 @@ body {
   
   .form-contato button:hover {
     background: var(--cor-hover);
-    color: black;
+    color: var(--background-color);
   }
 
   /* Estilos e alinhamento do Display-flex dos projetos... */
@@ -259,7 +259,7 @@ body {
 
   /* Tentando ajustar para celulares.....*/
   @media (max-width: 768px) {
-     /* Estilo do menu para telas menores*/
+    /* Estilo do menu para telas menores*/
     .nav ul {
         flex-direction: column;
         align-items: center;
@@ -274,7 +274,7 @@ body {
         padding: 10px 20px; 
     }
 
-      /* A minha foto para telas menores*/
+    /* A minha foto para telas menores*/
     .principal {
       flex-direction: column;
       align-items: center;
@@ -289,6 +289,7 @@ body {
         text-align: center;
     }
 
+    /*Ajustando o texto da formação educacional para ficar um pouco mais agradável no celular*/
     #formacao-educacional {
         text-align: left;
     }
