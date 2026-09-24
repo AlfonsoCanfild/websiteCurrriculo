@@ -1,78 +1,126 @@
 <!DOCTYPE html>
-<html lang="pt-BR"><!-- lembrei de colocar pt-br -->
+<html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Currículo - Alfonso Alberto Slovinski Canfild</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Alfonso Canfild</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="top-header">
-      <h1>Alfonso Alberto Slovinski Canfild</h1>
-      <p class="profissao">Desenvolvedor Back-end</p>
+
+    <header>
+        <h1>Alfonso Alberto Slovinski Canfild</h1>
+        <p>Dados | Business Intelligence | Desenvolvimento de Software</p>
     </header>
-  
-    <nav class="nav">
-      <ul>
-        <li><a href="index.html">Sobre mim</a></li>
-        <li><a href="formacaoEducacional.html">Formação Educacional</a></li>
-        <li><a href="portfolio.html">Portfólio</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
+
+    <nav>
+        <a href="index.html">Sobre Mim</a>
+        <a href="formacaoEducacional.html">Formação</a>
+        <a href="portfolio.html">Portfólio</a>
+        <a href="contato.html">Contato</a>
     </nav>
 
-    <div class="titulo-pagina">
-      <h2>-- Portfólio -- </h2>
-    </div>
-  
-    <section class="principal">
+    <main>
 
-      <div class="conteudo-principal">
+        <section>
+            <h2>Projetos</h2>
 
-        <div class="flex-container">
+            <div class="portfolio-grid">
 
-          <!-- Seção dos Sites, não criados por mim-->
-          <h3>Web-sites</h3>
-          <div class="projetos">
-            <div class="projeto">
-              <img src="imagens/google.png" alt="Google"/>
-              <div class="links-projeto">
-                <a href="https://google.com" target="_blank">Visitar site</a>
-              </div>
+                <article class="projeto">
+                    <h3>MeuIMC</h3>
+
+                    <p>
+                        Aplicação para cálculo do Índice de Massa Corporal (IMC),
+                        desenvolvida como projeto de tecnologia aplicada à
+                        inclusão digital.
+                    </p>
+
+                    <p>
+                        <strong>Tecnologias:</strong>
+                        HTML | CSS | JavaScript | Flutter | WebView
+                    </p>
+
+                    <a href="https://github.com/AlfonsoCanfild/Projeto_IMC"
+                       target="_blank">
+                        Ver projeto no GitHub
+                    </a>
+                </article>
+
+                <article class="projeto">
+                    <h3>Mountain Shooter / Sky Fighters</h3>
+
+                    <p>
+                        Jogo desenvolvido em Python utilizando Pygame,
+                        com diferentes níveis, inimigos, chefes, efeitos,
+                        pontuação e banco de dados.
+                    </p>
+
+                    <p>
+                        <strong>Tecnologias:</strong>
+                        Python | Pygame | SQLite | Git | GitHub
+                    </p>
+
+                    <a href="https://github.com/AlfonsoCanfild/MountainShooter"
+                       target="_blank">
+                        Ver projeto no GitHub
+                    </a>
+                </article>
+
+                <article class="projeto">
+                    <h3>TCC — Raízes do Nordeste</h3>
+
+                    <p>
+                        Projeto de backend desenvolvido para aplicação
+                        de conceitos de desenvolvimento de APIs,
+                        autenticação, banco de dados e organização
+                        arquitetural.
+                    </p>
+
+                    <p>
+                        <strong>Tecnologias:</strong>
+                        Python | FastAPI | SQLAlchemy | PostgreSQL |
+                        JWT | REST API
+                    </p>
+
+                    <a href="https://github.com/AlfonsoCanfild/TCC-Ra-zes-do-Nordeste"
+                       target="_blank">
+                        Ver projeto no GitHub
+                    </a>
+                </article>
+
+                <article class="projeto">
+                    <h3>Processamento de Imagens com OpenCV</h3>
+
+                    <p>
+                        Projeto acadêmico utilizando técnicas de processamento
+                        de imagens e visão computacional para identificação
+                        e análise de objetos em imagens.
+                    </p>
+
+                    <p>
+                        <strong>Tecnologias:</strong>
+                        Python | OpenCV | NumPy | GitHub
+                    </p>
+
+                    <a href="https://github.com/AlfonsoCanfild/NLP_351946"
+                       target="_blank">
+                        Ver projeto no GitHub
+                    </a>
+                </article>
+
             </div>
 
-            <div class="projeto">
-              <img src="imagens/uol.jpg" alt="Uol"/>
-              <div class="links-projeto">
-                <a href="https://uol.com" target="_blank">Visitar site</a>
-              </div>
-            </div>
-          </div>
+        </section>
 
-          <br>
+    </main>
 
-          <!-- Seção dos Jogos, não foram feitos por mim -->
-          <h3>Jogos</h3><!-- a palavra fica em caixa alta automaticamente -->
-          <div class="projetos">
-            <div class="projeto">
-              <img src="imagens/supermarketSimulator.jpg" alt="SuperMarket Simulator"/>
-              <div class="links-projeto">
-                <a href="https://www.crazygames.com.br/jogos/supermarket-simulator-cashier-game" target="_blank">Jogar</a>
-              </div>
-            </div>
+    <footer>
+        <p>Alfonso Canfild &copy; 2026</p>
+    </footer>
 
-            <div class="projeto">
-              <img src="imagens/miniBlox.avif" alt="MiniBlox"/>
-              <div class="links-projeto">
-                <a href="https://www.crazygames.com.br/jogos/miniblox" target="_blank">Jogar</a>
-              </div>
-            </div>
-          </div>
+</body>
 
-      </div>
-
-    </section>
-    
-  </body>
-  
 </html>
