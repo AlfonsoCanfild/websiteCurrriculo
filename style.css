@@ -213,6 +213,21 @@ footer p {
     font-size: 0.9rem;
 }
 
+.btn-curriculo {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #2b7a78;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-curriculo:hover {
+    opacity: 0.85;
+}
+
 @media (max-width: 700px) {
 
     header h1 {
